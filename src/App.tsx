@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-import { Button, Container } from '@mui/material';
+import { Container } from '@mui/material';
+import { Task } from './components/Task';
+import { taskMock1, taskMock2, taskMock3 } from './__mocks__/taskMocks';
 
-function App() {
-  return (
-    <Container maxWidth="sm">
-      <p>my-sprint app</p>
-      <Button variant="contained">Sample button</Button>
-    </Container>
-  );
-}
+const App = () => (
+  <Container maxWidth="sm">
+    <Task task={taskMock1} />
+    <Task task={taskMock2} />
+    <Task task={taskMock3} />
+  </Container>
+);
 
 export default App;
