@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import { Button, Container } from '@mui/material';
 
 function App() {
   return (
-    <div>
-      my-sprint
-    </div>
+    <Container maxWidth="sm">
+      <p>my-sprint app</p>
+      <Button variant="contained">Sample button</Button>
+    </Container>
   );
 }
 
