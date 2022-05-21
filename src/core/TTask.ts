@@ -1,4 +1,5 @@
 export interface TTask {
+  id: string;
   title: string;
   description?: string;
   status: TTaskStatus;
